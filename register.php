@@ -7,7 +7,7 @@ include 'sidebar.php'
   <table>
     <form method="post" action="register_process.php">
     <tr>
-      <td colspan="2"><h3>สมัครสมาชิก</h3></td>
+      <td colspan="2"><h3>สมัครสมาชิก </h3></td>
     </tr>
     <tr>
       <td>Username : </td>
