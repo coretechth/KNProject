@@ -40,7 +40,7 @@ $objQuerysqlProduct = mysqli_query($dbconfig, $sqlselProduct);
                                             <b>ชื่อสินค้า</b> : <?php echo $objResultProduct["Product_name"]; ?><br>
                                             <b>รายละเอียด</b> : <?php echo $objResultProduct["Product_detail"]; ?><br><br>
                                             <b>ราคา</b> : <?php echo $objResultProduct["Price"]; ?> บาท<br><br>
-                                            <a href="order.php?ProductID=<?php echo $objResultProduct["Product_ID"];?>">สั่งซื้อ</a>
+                                            <a href="order.php?Method=add&ProductID=<?php echo $objResultProduct["Product_ID"];?>">สั่งซื้อ</a>
                                           </td>
                                         </tr>
                                         <?php

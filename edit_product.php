@@ -2,6 +2,7 @@
 include 'header.php';
 include 'sidebar.php';
 include 'dbconfig.php';
+if ($_SESSION['role']==1) {
 
 $sqlAdminProduct2 = "SELECT * FROM Product_master WHERE is_del=0";
 $objQueryAdminProduct2 = mysqli_query($dbconfig, $sqlAdminProduct2);
@@ -41,4 +42,13 @@ $objQueryAdminProduct2 = mysqli_query($dbconfig, $sqlAdminProduct2);
     </table>
     <a href="admin.php">กลับหน้าแอดมิน</a>
     </td>
+    <?php
+  }
+  else {
+
+    /*echo "This page for Admin only! <a href='index.php'>กลับสู่หน้าหลัก</a>";*/
+    echo '<td width="80%"><h2>This page for Admin only! <a href="index.php">กลับสู่หน้าหลัก</a></h2></td>';
+    exit();
+  }
+  ?>
   <?php include 'footer.php' ?>

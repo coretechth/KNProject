@@ -2,6 +2,7 @@
 /*session_start();*/
 include 'header.php';
 include 'sidebar.php';
+if (isset($_SESSION['role']) && !empty($_SESSION['role'])) {
 if ($_SESSION['role']==1) {?>
 
   <td valign="top" width="80%" style="padding-left:20px;">
@@ -35,6 +36,7 @@ if ($_SESSION['role']==1) {?>
   </td>
 
   <?php
+}
 }
 else {
 
