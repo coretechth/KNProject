@@ -59,7 +59,7 @@ if($method=='update')
               <td><?php echo $objResult["Price"]; ?></td>
               <td><input type='text' name='amount[$id]' value='<?php echo $qty;?>' size='2'/></td>
               <td><?php echo number_format($total,2);?></td>
-              <td><a href="order.php?Method=remove&ProductID=<?php echo $objResult["Product_ID"];?>">ลบ</a></td>
+              <td><a href="order.php?Method=remove&ProductID=<?php echo $objResult["Product_ID"];?>">ลบบ</a></td>
             </tr>
             <?php
       }
