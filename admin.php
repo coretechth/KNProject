@@ -13,14 +13,14 @@ if ($_SESSION['role']==1) {?>
           <h3>จัดการข้อมูลสินค้า</h3>
           <ul>
             <li><a href="show_product.php">ดูสินค้าทั้งหมด</a></li>
-            <li><a href="#">เพิ่มสินค้า</a></li>
+            <li><a href="add_product.php">เพิ่มสินค้า</a></li>
             <li><a href="edit_product.php">แก้ไข/ลบสินค้า</a></li>
           </ul>
         </td>
         <td>
           <h3>จัดการสต็อก</h3>
           <ul>
-            <li><a href="#">รับสินค้าเข้า</a></li>
+            <li><a href="receive.php">รับสินค้าเข้า</a></li>
             <li><a href="#">แก้ไขจำนวนสินค้า</a></li>
           </ul>
         </td>
