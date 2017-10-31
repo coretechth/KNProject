@@ -20,8 +20,9 @@ if ($_SESSION['role']==1) {?>
         <td>
           <h3>จัดการสต็อก</h3>
           <ul>
+            <li><a href="show_product_stock.php">รายการสินค้าคงเหลือ</a></li>
             <li><a href="receive.php">รับสินค้าเข้า</a></li>
-            <li><a href="#">แก้ไขจำนวนสินค้า</a></li>
+
           </ul>
         </td>
         <td>

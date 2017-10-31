@@ -1,5 +1,5 @@
 <?php
-include './dbconfig.php';
+include 'dbconfig.php';
 session_start();
 
    $userid = $_SESSION["UserID"];
@@ -7,12 +7,6 @@ session_start();
    $sqlRegis = "INSERT INTO bill_master(username,create_date) VALUES('$userid',NOW());";
    $objRegis = mysqli_query($dbconfig, $sqlRegis);
     if ($objRegis) {
-        /*$sql2 = "SELECT * FROM bill_master ORDER BY bill_id DESC LIMIT 1";
-        $objRegis2 = mysqli_query($dbconfig, $sql2);
-        if ($objRegis2) {
-          echo $objRegis2["bill_id"];
-        }
-*/
         $sql = "SELECT * FROM bill_master ORDER BY bill_id DESC LIMIT 1";
         $obj = mysqli_query($dbconfig,$sql);
         $Result = mysqli_fetch_array($obj);
@@ -29,7 +23,7 @@ session_start();
 
                     echo $total;
 
-		                $sql4	= "INSERT INTO bill_detail(bill_id,Product_ID,price) VALUES($billid, $p_id,$total)";
+		                $sql4	= "INSERT INTO bill_detail(bill_id,Product_ID,price,Qty) VALUES($billid, $p_id,$total,$qty)";
 		                $query4	= mysqli_query($dbconfig, $sql4);
                     if($query4){
                       foreach($_SESSION['cart'] as $p_id)
@@ -52,6 +46,8 @@ session_start();
 
         }
 
+    }else {
+      echo "string";
     }
 
 ?>

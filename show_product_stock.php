@@ -3,11 +3,11 @@ include 'header.php';
 include 'sidebar.php';
 include 'dbconfig.php';
 
-$sqlAdminProduct = "SELECT * FROM Product_master WHERE is_del=0";
-$objQueryAdminProduct = mysqli_query($dbconfig, $sqlAdminProduct);
+$sql = "SELECT * FROM Product_master WHERE is_del=0";
+$objQuery = mysqli_query($dbconfig, $sql);
 ?>
     <td width="80%" align="center">
-    <h1>สินค้าทั้งหมด</h1>
+    <h1>รายการสต็อกสินค้า</h1>
     <table border="1" width="98%" style="margin-bottom:20px;">
       <th>รูปภาพ</th>
       <th width="5%">รหัสสินค้า</th>
@@ -15,7 +15,7 @@ $objQueryAdminProduct = mysqli_query($dbconfig, $sqlAdminProduct);
       <th>ราคา</th>
       <th width="10%">วันที่สร้าง</th>
       <?php
-                                    while ($objResultAdminProduct = mysqli_fetch_array($objQueryAdminProduct)) {
+                                    while ($objResultAdminProduct = mysqli_fetch_array($objQuery)) {
                                         ?>
                                         <tr style="font-size:14px;">
                                           <td><img src="images\products\products<?php echo $objResultAdminProduct["Product_ID"]; ?>.jpg" alt="" width="100px"></td>

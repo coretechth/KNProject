@@ -19,7 +19,7 @@ $objQuerycus = mysqli_query($dbconfig, $sqlCheckUser);
  if(!$objResult)
  {
    /*เพิ่มผู้ใช้งานลงในฐานข้อมูล*/
-   $sqlRegis = "INSERT INTO user_master(Username,Password,Name,Address,Email,Tel,Role) VALUES('$username','$password','$name','$tel','$email','$address','0')";
+   $sqlRegis = "INSERT INTO user_master(Username,Password,Name,Address,Email,Tel,Role) VALUES('$username','$password','$name','$address','$email','$tel','2')";
    $objRegis = mysqli_query($dbconfig, $sqlRegis);
 
     if ($objRegis) {

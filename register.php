@@ -23,7 +23,7 @@ include 'sidebar.php'
     </tr>
     <tr>
       <td>เบอร์โทร : </td>
-      <td><input id="txtTel" name="txtTel" type="text" placeholder="088-888-8888" required="">*</td>
+      <td><input id="txtTel" name="txtTel" type="text" placeholder="0123456789" required="">*</td>
     </tr>
     <tr>
       <td>อีเมล์ : </td>
