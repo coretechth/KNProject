@@ -26,9 +26,9 @@ $objQueryAdminProduct2 = mysqli_query($dbconfig, $sqlAdminProduct2);
                                           <td><?php echo $objResultAdminProduct2["Price"]; ?></td>
                                           <td><img src="images\products\products<?php echo $objResultAdminProduct2["Product_ID"]; ?>.jpg" alt="" width="100px"></td>
                                           <td>
-                                            <a href="edit_product_process.php?id=<?php echo $objResultAdminProduct2["Product_ID"]; ?>">
+                                            <!--<a href="edit_product_process.php?id=<?php echo $objResultAdminProduct2["Product_ID"]; ?>">
                                               <img src="images\file.png" alt="" width="25px">
-                                            </a>
+                                            </a>-->
                                             <a href="del_product_process.php?id=<?php echo $objResultAdminProduct2["Product_ID"]; ?>" onclick="return confirm('ต้องการลบสินค้าใช่หรือไม่?')">
                                               <img src="images\delete.png" alt="" width="25px">
                                             </a>
