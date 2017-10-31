@@ -7,13 +7,24 @@ session_start();
 
     if(isset($_SESSION['UserID']) && !empty($_SESSION['UserID'])){
       echo 'ยินดีต้อนรับ, <b>'.$_SESSION["UserID"].'</b>';
-      echo '<br><a href="logout.php">ออกจากระบบ</a>';
+      echo '<br><a href="logout.php">ออกจากระบบ</a><br>';
     }else {
-      echo '<a href="login.php">กรุณาเข้าสู่ระบบ</a><br><a href="register.php">สมัครสมาชิก</a>';
+      echo '<a href="login.php">กรุณาเข้าสู่ระบบ</a><br><a href="register.php">สมัครสมาชิก</a><br>';
     }
 
     if (isset($_SESSION['role']) && !empty($_SESSION['role'])) {
+
+      $role = $_SESSION['role'];
+      if($role==1){
         echo '<br><a href="admin.php">หน้าแอดมิน</a>';
+      }else {
+        echo '<b><a href="member.php">หน้าสมาชิก</a>';
+      }
+      /*if($_SESSION["role"]==1){
+        echo '<br><a href="admin.php">หน้าแอดมิน</a>';
+      }elseif ($_SESSION["role"]=='0') {
+        echo '<b><a href="member.php">หน้าสมาชิก</a>';
+      }*/
     }
     ?>
     <br>

@@ -26,7 +26,7 @@ include 'sidebar.php'
       <td><input type="file" name="filUpload"></td>
     </tr>
     <tr>
-      <td colspan="2">  <button  type="submit">สมัครสมาชิก</button></td>
+      <td colspan="2">  <button  type="submit">เพิ่มสินค้า</button></td>
     </tr>
   </table>
 </form>

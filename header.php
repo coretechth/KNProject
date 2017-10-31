@@ -21,7 +21,7 @@
         <tr style="text-align:center; color:red;">
           <td style="padding:5px;"><h3><a href="index.php" class="menutext">หน้าหลัก</a></h3></td>
           <td style="padding:5px"><h3><a href="product.php?category=0" class="menutext">สินค้า</a></h3></td>
-          <td style="padding:5px"><h3><a href="order.php" class="menutext">ตะกร้าสินค้า</a></h3></td>
+          <td style="padding:5px"><h3><a href="order.php?act=show" class="menutext">ตะกร้าสินค้า</a></h3></td>
           <td style="padding:5px"><h3><a href="#" class="menutext">ชำระเงิน</a></h3></td>
           <td style="padding:5px"><h3><a href="contact.php" class="menutext">ติดต่อ</a></h3></td>
           <td style="padding:5px"><h3><a href="#" class="menutext">ผู้จัดทำ</a></h3></td>

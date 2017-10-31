@@ -13,8 +13,13 @@ $objQuery = mysqli_query($dbconfig, $strSQL);
  {
    $_SESSION["UserID"] = $objResult["Username"];
    $_SESSION["role"] = $objResult["Role"];
+   $_SESSION["Name"] = $objResult["Name"];
+   $_SESSION["Address"] = $objResult["Address"];
+   $_SESSION["Email"] = $objResult["Email"];
+   $_SESSION["Tel"] = $objResult["Tel"];
 
    session_write_close();
+
 
    if($_SESSION["role"]==1){
      header("location:admin.php");
