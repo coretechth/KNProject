@@ -8,6 +8,7 @@ $sql = "SELECT bm.bill_id, bm.username, bm.create_date, bd.Qty, bd.price, pm.Pro
 INNER JOIN product_master pm ON bd.Product_ID = pm.Product_ID
 WHERE bm.bill_id =$id";
 $objQ = mysqli_query($dbconfig, $sql);
+$total = 0;
 
 /**/
 ?>
@@ -24,7 +25,7 @@ $objQ = mysqli_query($dbconfig, $sql);
         <?php
             while ($objResult = mysqli_fetch_array($objQ)) {
               $sum = $objResult['price'];
-          		@$total += $sum;
+          		$total += $sum;
               ?>
             <tr>
               <td valign="center" align="center">

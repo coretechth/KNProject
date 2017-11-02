@@ -13,8 +13,7 @@ if ($_SESSION['role']==1) {?>
           <h3>จัดการข้อมูลสินค้า</h3>
           <ul>
             <li><a href="show_product.php">ดูสินค้าทั้งหมด</a></li>
-            <li><a href="add_product.php">เพิ่มสินค้า</a></li>
-            <li><a href="edit_product.php">แก้ไข/ลบสินค้า</a></li>
+            <li><a href="edit_product.php">ลบสินค้า</a></li>
           </ul>
         </td>
         <td>
@@ -28,8 +27,7 @@ if ($_SESSION['role']==1) {?>
         <td>
           <h3>จัดการสมาชิก</h3>
           <ul>
-            <li><a href="#">แก้ไขข้อมูลสมาชิก</a></li>
-            <li><a href="#">ลบข้อมูลสมาชิก</a></li>
+            <li><a href="del_member.php">ลบข้อมูลสมาชิก</a></li>
           </ul>
         </td>
       </tr>

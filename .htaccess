@@ -1,0 +1,3 @@
+#Alternate default index pages
+
+DirectoryIndex home.php home.htm index.php index.html
